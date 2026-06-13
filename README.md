@@ -85,23 +85,8 @@ SW1/SW2 → show vlan brief → VLANs 100 y 200 presentes ✅
 ## 🌐 Documentación de la Red
 
 ### Topología
+<img width="975" height="717" alt="image" src="https://github.com/user-attachments/assets/07c7fc43-b902-4c26-9c60-fe877b0ccb42" />
 
-```
-┌─────────────┐     e2/e0/0    ┌──────────────┐    e0/1    ┌──────────────┐
-│ Kali Linux  │────────────────│     SW1       │────────────│     SW2      │
-│  Atacante   │   TRUNK        │  IOL L2       │  TRUNK     │   IOL L2     │
-│172.20.25.100│  dot1q         │  VTP SERVER   │  dot1q     │  VTP CLIENT  │
-└─────────────┘                └──────┬────────┘            └──────┬───────┘
-                                      │ e0/2                        │ e0/0
-                                      │ TRUNK                       │ ACCESS
-                                      │ dot1q                       │ VLAN 20
-                               ┌──────▼────────┐            ┌──────▼───────┐
-                               │   Router 3725  │            │  Tiny Core   │
-                               │  fa0/0 TRUNK   │            │   Víctima    │
-                               │ 172.20.25.1/24 │            │172.7.80.100  │
-                               │ 172.7.80.1/24  │            └──────────────┘
-                               └───────────────┘
-```
 
 ### VLANs
 
@@ -137,8 +122,9 @@ SW1/SW2 → show vlan brief → VLANs 100 y 200 presentes ✅
 
 > **Instrucciones:** Toma estas capturas durante la demostración y agrégalas aquí.
 
-1. `01_topologia_eve.png` — Topología completa en EVE-NG con nombre y matrícula visible
-2. `02_vtp_status_inicial.png` — `show vtp status` en SW1 con revision 0
+
+2. <img width="663" height="316" alt="image" src="https://github.com/user-attachments/assets/b42df550-6fa0-4bb9-a876-2b9ffe52728b" />
+ — `show vtp status` en SW1 con revision 0
 3. `03_vlan_brief_inicial.png` — `show vlan brief` en SW1 antes del ataque
 4. `04_script_ejecutando.png` — Script corriendo en Kali (PASO 1)
 5. `05_vlans_agregadas_sw1.png` — `show vlan brief` en SW1 con VLANs 100 y 200

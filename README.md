@@ -6,7 +6,7 @@
 ---
 
 ## 📹 Video del Ataque
-> [Insertar enlace del video aquí]
+> [https://www.youtube.com/watch?v=bUu-CFBoF-Y]
 
 ---
 
@@ -120,20 +120,26 @@ SW1/SW2 → show vlan brief → VLANs 100 y 200 presentes ✅
 
 ## 📸 Capturas de pantalla requeridas
 
-> **Instrucciones:** Toma estas capturas durante la demostración y agrégalas aquí.
 
 
-2. <img width="663" height="316" alt="image" src="https://github.com/user-attachments/assets/b42df550-6fa0-4bb9-a876-2b9ffe52728b" />
+<img width="663" height="316" alt="image" src="https://github.com/user-attachments/assets/b42df550-6fa0-4bb9-a876-2b9ffe52728b" />
  — `show vtp status` en SW1 con revision 0
-3. `03_vlan_brief_inicial.png` — `show vlan brief` en SW1 antes del ataque
-4. `04_script_ejecutando.png` — Script corriendo en Kali (PASO 1)
-5. `05_vlans_agregadas_sw1.png` — `show vlan brief` en SW1 con VLANs 100 y 200
-6. `06_vlans_agregadas_sw2.png` — `show vlan brief` en SW2 con VLANs 100 y 200
-7. `07_vtp_revision_999.png` — `show vtp status` con revision 999
-8. `08_script_paso2.png` — Script corriendo PASO 2 (borrar)
-9. `09_vlans_borradas.png` — `show vlan brief` sin VLANs 100 y 200
-10. `10_contramedida.png` — Configuración del password VTP en SW1
-11. `11_ataque_fallido.png` — Script ejecutándose con contramedida activa (no funciona)
+<img width="505" height="214" alt="image" src="https://github.com/user-attachments/assets/4de945b8-f111-4008-8ea4-d0fe8b810ac1" />
+ — `show vlan brief` en SW1 antes del ataque
+<img width="468" height="312" alt="image" src="https://github.com/user-attachments/assets/5227cff6-3d9f-4b5b-b75e-0c2ba6f7c609" />
+ — Script corriendo en Kali (PASO 1)
+<img width="647" height="186" alt="image" src="https://github.com/user-attachments/assets/213a39e7-80f2-4eeb-a918-c8f5f62e4936" />
+ — `show vlan brief` en SW2 con VLANs 100 y 200
+<img width="639" height="307" alt="image" src="https://github.com/user-attachments/assets/59c02fd9-7d49-4960-b250-b0de88da221d" />
+— `show vtp status` con revision 999
+<img width="537" height="537" alt="image" src="https://github.com/user-attachments/assets/f9ec4ade-ee5b-40f0-8f4e-9c1c2b7aa783" />
+— Script corriendo PASO 2 (borrar)
+<img width="550" height="214" alt="image" src="https://github.com/user-attachments/assets/d57ccecb-15d5-4df0-8162-c607552d83a9" />
+ — `show vlan brief` sin VLANs 100 y 200
+<img width="353" height="65" alt="image" src="https://github.com/user-attachments/assets/56c6c893-3531-449d-a50f-504b8a35b6e8" />
+ — Configuración del password VTP en SW1
+<img width="800" height="359" alt="image" src="https://github.com/user-attachments/assets/372fb3cc-36fd-4d48-92fc-e1e0defecd8f" />
+ — Script ejecutándose con contramedida activa (no funciona)
 
 ---
 
